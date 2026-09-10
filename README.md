@@ -20,7 +20,7 @@ The REST API for **ShopEase**, an e-commerce storefront. Built with Express and 
 
 ```bash
 npm install              # install dependencies
-cp .env.example .env     # configure DATABASE_URL etc.
+# create .env from the environment variables table below
 npx prisma migrate deploy # apply migrations to the database
 npx prisma db seed        # load products into the database
 npm run dev               # start the API (default http://localhost:5000)
@@ -44,7 +44,7 @@ npm run db:seed
 | `CLIENT_URL` | Origin allowed by CORS (the frontend URL, e.g. `http://localhost:5173`) |
 | `NODE_ENV` | `development` / `production` |
 
-`.env` is git-ignored. Do not commit real credentials — the committed `.env.example` holds placeholders.
+`.env` is git-ignored. Do not commit real credentials — copy the table above into your own `.env`.
 
 ## Folder Structure
 
